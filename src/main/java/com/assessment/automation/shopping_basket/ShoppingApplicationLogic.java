@@ -26,6 +26,11 @@ public class ShoppingApplicationLogic {
 	     * @return total cost in pence
 	     */
 	    public int calculateTotal(List<String> items) {
+	    	
+	    	if (items == null || items.isEmpty()) {
+	            return 0;
+	        }
+	    	
 	        long melonCount = items.stream().filter(i -> i.equalsIgnoreCase("melon")).count();
 	        long limeCount = items.stream().filter(i -> i.equalsIgnoreCase("lime")).count();
 

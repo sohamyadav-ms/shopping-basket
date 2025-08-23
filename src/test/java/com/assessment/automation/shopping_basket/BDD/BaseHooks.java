@@ -1,4 +1,4 @@
-package com.assessment.automation.shopping_basket;
+package com.assessment.automation.shopping_basket.BDD;
 
 import io.cucumber.java.After;
 import io.cucumber.java.Before;

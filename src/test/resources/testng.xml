@@ -1,0 +1,11 @@
+<suite name="TestNGTestSuite" parallel="false">
+    <listeners>
+        <listener class-name="com.assessment.automation.shopping_basket.TestNGReporter"/>
+    </listeners>
+
+    <test name="BDDTests">
+        <classes>
+            <class name="com.assessment.automation.shopping_basket.TestsCucumberTestNGRunner"/>
+        </classes>
+    </test>
+</suite>
