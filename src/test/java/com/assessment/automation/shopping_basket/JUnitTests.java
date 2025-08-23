@@ -3,14 +3,16 @@ package com.assessment.automation.shopping_basket;
 import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.*;
-import com.assessment.automation.shopping_basket.ShoppingApplicationLogic;
 
+import org.junit.jupiter.api.AfterAll;
 
-import java.util.Arrays;
-import java.util.Collections;
-import java.util.List;
+import com.assessment.automation.extentreport.ExtentReport;
+import com.assessment.automation.testdataprovider.TestDataLoader;
+import com.assessment.automation.testdataprovider.TestDataObjects;
+import com.aventstack.extentreports.ExtentTest;
 
 import org.junit.jupiter.api.BeforeEach;
+
 
 public class JUnitTests {
 	
@@ -22,111 +24,310 @@ public class JUnitTests {
         calculator = new ShoppingApplicationLogic();
     }
 
+	@AfterAll
+    static void tearDown() {
+		
+        ExtentReport.extent.flush();
+    }
+	
 	 @Test
 	    void testEmptyBasket() {
-	        assertEquals(0, calculator.calculateTotal(Collections.emptyList()));
+	        TestDataObjects testCase = TestDataLoader.getTestCaseByName("Empty Basket");
+	        ExtentTest test = ExtentReport.extent.createTest(testCase.getName());
+	        try {
+	            test.info("Basket Items: " + testCase.getBasket());
+	            test.info("Expected Total: " + testCase.getExpectedTotal());
+
+	            int actualTotal = calculator.calculateTotal(testCase.getBasket());
+	            test.info("Actual Total: " + actualTotal);
+
+	            assertEquals(testCase.getExpectedTotal(), actualTotal);
+	            test.pass("Test Passed");
+
+	        } catch (AssertionError e) {
+	            test.fail("Test Failed | " + e.getMessage());
+	            throw e; // so JUnit still registers the failure
+	        }
 	    }
 
 	    @Test
 	    void testNullBasket() {
-	        assertEquals(0, calculator.calculateTotal(null));
+	    	TestDataObjects testCase = TestDataLoader.getTestCaseByName("Null Basket");
+	    	ExtentTest test = ExtentReport.extent.createTest(testCase.getName());
+	        try {
+	            test.info("Basket Items: " + testCase.getBasket());
+	            test.info("Expected Total: " + testCase.getExpectedTotal());
+
+	            int actualTotal = calculator.calculateTotal(testCase.getBasket());
+	            test.info("Actual Total: " + actualTotal);
+
+	            assertEquals(testCase.getExpectedTotal(), actualTotal);
+	            test.pass("Test Passed");
+
+	        } catch (AssertionError e) {
+	            test.fail("Test Failed | " + e.getMessage());
+	            throw e; // so JUnit still registers the failure
+	        }
 	    }
 
 	    @Test
 	    void testSingleApple() {
-	        assertEquals(35, calculator.calculateTotal(Arrays.asList("Apple")));
+	    	TestDataObjects testCase = TestDataLoader.getTestCaseByName("Single Apple");
+	    	ExtentTest test = ExtentReport.extent.createTest(testCase.getName());
+	        try {
+	            test.info("Basket Items: " + testCase.getBasket());
+	            test.info("Expected Total: " + testCase.getExpectedTotal());
+
+	            int actualTotal = calculator.calculateTotal(testCase.getBasket());
+	            test.info("Actual Total: " + actualTotal);
+
+	            assertEquals(testCase.getExpectedTotal(), actualTotal);
+	            test.pass("Test Passed");
+
+	        } catch (AssertionError e) {
+	            test.fail("Test Failed | " + e.getMessage());
+	            throw e; // so JUnit still registers the failure
+	        }
 	    }
 
 	    @Test
 	    void testSingleBanana() {
-	        assertEquals(20, calculator.calculateTotal(Arrays.asList("Banana")));
+	    	TestDataObjects testCase = TestDataLoader.getTestCaseByName("Single Banana");
+	    	ExtentTest test = ExtentReport.extent.createTest(testCase.getName());
+	        try {
+	            test.info("Basket Items: " + testCase.getBasket());
+	            test.info("Expected Total: " + testCase.getExpectedTotal());
+
+	            int actualTotal = calculator.calculateTotal(testCase.getBasket());
+	            test.info("Actual Total: " + actualTotal);
+
+	            assertEquals(testCase.getExpectedTotal(), actualTotal);
+	            test.pass("Test Passed");
+
+	        } catch (AssertionError e) {
+	            test.fail("Test Failed | " + e.getMessage());
+	            throw e; // so JUnit still registers the failure
+	        }
 	    }
 
 	    @Test
 	    void testSingleMelon() {
-	        assertEquals(50, calculator.calculateTotal(Arrays.asList("Melon")));
+	    	TestDataObjects testCase = TestDataLoader.getTestCaseByName("Single Melon");
+	    	ExtentTest test = ExtentReport.extent.createTest(testCase.getName());
+	        try {
+	            test.info("Basket Items: " + testCase.getBasket());
+	            test.info("Expected Total: " + testCase.getExpectedTotal());
+
+	            int actualTotal = calculator.calculateTotal(testCase.getBasket());
+	            test.info("Actual Total: " + actualTotal);
+
+	            assertEquals(testCase.getExpectedTotal(), actualTotal);
+	            test.pass("Test Passed");
+
+	        } catch (AssertionError e) {
+	            test.fail("Test Failed | " + e.getMessage());
+	            throw e; // so JUnit still registers the failure
+	        }
 	    }
 
 	    @Test
 	    void testSingleLime() {
-	        assertEquals(15, calculator.calculateTotal(Arrays.asList("Lime")));
+	    	TestDataObjects testCase = TestDataLoader.getTestCaseByName("Single Lime");
+	    	ExtentTest test = ExtentReport.extent.createTest(testCase.getName());
+	        try {
+	            test.info("Basket Items: " + testCase.getBasket());
+	            test.info("Expected Total: " + testCase.getExpectedTotal());
+
+	            int actualTotal = calculator.calculateTotal(testCase.getBasket());
+	            test.info("Actual Total: " + actualTotal);
+
+	            assertEquals(testCase.getExpectedTotal(), actualTotal);
+	            test.pass("Test Passed");
+
+	        } catch (AssertionError e) {
+	            test.fail("Test Failed | " + e.getMessage());
+	            throw e; // so JUnit still registers the failure
+	        }
 	    }
 
 	    @Test
 	    void testMultipleApplesAndBananas() {
-	        assertEquals(90, calculator.calculateTotal(Arrays.asList("Apple", "Banana", "Apple")));
+	    	TestDataObjects testCase = TestDataLoader.getTestCaseByName("Multiple Apples And Bananas");
+	    	ExtentTest test = ExtentReport.extent.createTest(testCase.getName());
+	        try {
+	            test.info("Basket Items: " + testCase.getBasket());
+	            test.info("Expected Total: " + testCase.getExpectedTotal());
+
+	            int actualTotal = calculator.calculateTotal(testCase.getBasket());
+	            test.info("Actual Total: " + actualTotal);
+
+	            assertEquals(testCase.getExpectedTotal(), actualTotal);
+	            test.pass("Test Passed");
+
+	        } catch (AssertionError e) {
+	            test.fail("Test Failed | " + e.getMessage());
+	            throw e; // so JUnit still registers the failure
+	        }
 	    }
 
 	    @Test
 	    void testCaseInsensitiveItems() {
-	        assertEquals(35, calculator.calculateTotal(Arrays.asList("apple")));
-	        assertEquals(35, calculator.calculateTotal(Arrays.asList("APPLE")));
-	        assertEquals(50, calculator.calculateTotal(Arrays.asList("MeLoN")));
+	    	TestDataObjects testCase = TestDataLoader.getTestCaseByName("Case Insensitive Items");
+	    	ExtentTest test = ExtentReport.extent.createTest(testCase.getName());
+	        try {
+	            test.info("Basket Items: " + testCase.getBasket());
+	            test.info("Expected Total: " + testCase.getExpectedTotal());
+
+	            int actualTotal = calculator.calculateTotal(testCase.getBasket());
+	            test.info("Actual Total: " + actualTotal);
+
+	            assertEquals(testCase.getExpectedTotal(), actualTotal);
+	            test.pass("Test Passed");
+
+	        } catch (AssertionError e) {
+	            test.fail("Test Failed | " + e.getMessage());
+	            throw e; // so JUnit still registers the failure
+	        }
 	    }
 
-	  
 	    @Test
 	    void testMelonOfferBuyOneGetOneFree() {
-	        assertEquals(50, calculator.calculateTotal(Arrays.asList("Melon", "Melon")));
-	        assertEquals(100, calculator.calculateTotal(Arrays.asList("Melon", "Melon", "Melon", "Melon")));
-	        assertEquals(150, calculator.calculateTotal(Arrays.asList("Melon", "Melon", "Melon", "Melon", "Melon")));
+	    	TestDataObjects testCase = TestDataLoader.getTestCaseByName("Melon Offer Buy One Get One Free");
+	    	ExtentTest test = ExtentReport.extent.createTest(testCase.getName());
+	        try {
+	            test.info("Basket Items: " + testCase.getBasket());
+	            test.info("Expected Total: " + testCase.getExpectedTotal());
+
+	            int actualTotal = calculator.calculateTotal(testCase.getBasket());
+	            test.info("Actual Total: " + actualTotal);
+
+	            assertEquals(testCase.getExpectedTotal(), actualTotal);
+	            test.pass("Test Passed");
+
+	        } catch (AssertionError e) {
+	            test.fail("Test Failed | " + e.getMessage());
+	            throw e; // so JUnit still registers the failure
+	        }
 	    }
 
-	
 	    @Test
 	    void testLimeOfferThreeForTwo() {
-	        assertEquals(30, calculator.calculateTotal(Arrays.asList("Lime", "Lime", "Lime")));
-	        assertEquals(45, calculator.calculateTotal(Arrays.asList("Lime", "Lime", "Lime", "Lime")));
-	        assertEquals(60, calculator.calculateTotal(Arrays.asList("Lime", "Lime", "Lime", "Lime", "Lime", "Lime")));
-	        assertEquals(75, calculator.calculateTotal(Arrays.asList("Lime", "Lime", "Lime", "Lime", "Lime", "Lime", "Lime")));
+	    	TestDataObjects testCase = TestDataLoader.getTestCaseByName("Lime Offer Three For Two");
+	    	ExtentTest test = ExtentReport.extent.createTest(testCase.getName());
+	        try {
+	            test.info("Basket Items: " + testCase.getBasket());
+	            test.info("Expected Total: " + testCase.getExpectedTotal());
+
+	            int actualTotal = calculator.calculateTotal(testCase.getBasket());
+	            test.info("Actual Total: " + actualTotal);
+
+	            assertEquals(testCase.getExpectedTotal(), actualTotal);
+	            test.pass("Test Passed");
+
+	        } catch (AssertionError e) {
+	            test.fail("Test Failed | " + e.getMessage());
+	            throw e; // so JUnit still registers the failure
+	        }
 	    }
 
-	  
 	    @Test
 	    void testMixedBasketWithOffers() {
-	        List<String> basket = Arrays.asList(
-	                "Apple", "Apple", "Banana", "Melon", "Melon", "Lime", "Lime", "Lime"
-	        );
-	        assertEquals(170, calculator.calculateTotal(basket));
+	    	TestDataObjects testCase = TestDataLoader.getTestCaseByName("Mixed Basket With Offers");
+	    	ExtentTest test = ExtentReport.extent.createTest(testCase.getName());
+	        try {
+	            test.info("Basket Items: " + testCase.getBasket());
+	            test.info("Expected Total: " + testCase.getExpectedTotal());
+
+	            int actualTotal = calculator.calculateTotal(testCase.getBasket());
+	            test.info("Actual Total: " + actualTotal);
+
+	            assertEquals(testCase.getExpectedTotal(), actualTotal);
+	            test.pass("Test Passed");
+
+	        } catch (AssertionError e) {
+	            test.fail("Test Failed | " + e.getMessage());
+	            throw e; // so JUnit still registers the failure
+	        }
 	    }
 
 	    @Test
 	    void testMixedBasketWithUnknownItems() {
-	        List<String> basket = Arrays.asList(
-	                "Apple", "Banana", "Chocolate", "Melon"
-	        );
-	        assertEquals(105, calculator.calculateTotal(basket)); // Chocolate ignored
-	    }
+	    	TestDataObjects testCase = TestDataLoader.getTestCaseByName("Mixed Basket With Unknown Items");
+	    	ExtentTest test = ExtentReport.extent.createTest(testCase.getName());
+	        try {
+	            test.info("Basket Items: " + testCase.getBasket());
+	            test.info("Expected Total: " + testCase.getExpectedTotal());
 
-	    
-	    @Test
-	    void testBasketWithSingleMelonOrLime() {
-	        assertEquals(50, calculator.calculateTotal(Arrays.asList("Melon")));
-	        assertEquals(15, calculator.calculateTotal(Arrays.asList("Lime")));
+	            int actualTotal = calculator.calculateTotal(testCase.getBasket());
+	            test.info("Actual Total: " + actualTotal);
+
+	            assertEquals(testCase.getExpectedTotal(), actualTotal);
+	            test.pass("Test Passed");
+
+	        } catch (AssertionError e) {
+	            test.fail("Test Failed | " + e.getMessage());
+	            throw e; // so JUnit still registers the failure
+	        }
 	    }
 
 	    @Test
 	    void testBasketWithWhitespaceItems() {
-	        List<String> basket = Arrays.asList(" Apple ", " Banana ", "  Melon");
-	        assertEquals(105, calculator.calculateTotal(Arrays.asList("Apple", "Banana", "Melon")));
+	    	TestDataObjects testCase = TestDataLoader.getTestCaseByName("Basket With Whitespace Items");
+	    	ExtentTest test = ExtentReport.extent.createTest(testCase.getName());
+	        try {
+	            test.info("Basket Items: " + testCase.getBasket());
+	            test.info("Expected Total: " + testCase.getExpectedTotal());
+
+	            int actualTotal = calculator.calculateTotal(testCase.getBasket());
+	            test.info("Actual Total: " + actualTotal);
+
+	            assertEquals(testCase.getExpectedTotal(), actualTotal);
+	            test.pass("Test Passed");
+
+	        } catch (AssertionError e) {
+	            test.fail("Test Failed | " + e.getMessage());
+	            throw e; // so JUnit still registers the failure
+	        }
 	    }
 
 	    @Test
 	    void testBasketWithSpecialCharacters() {
-	        List<String> basket = Arrays.asList("Apple@", "#Banana", "Melon$");
-	        assertEquals(50, calculator.calculateTotal(Arrays.asList("Melon"))); // Invalid items ignored
-	    }
+	    	TestDataObjects testCase = TestDataLoader.getTestCaseByName("Basket With Special Characters");
+	    	ExtentTest test = ExtentReport.extent.createTest(testCase.getName());
+	        try {
+	            test.info("Basket Items: " + testCase.getBasket());
+	            test.info("Expected Total: " + testCase.getExpectedTotal());
 
-	    
-	    @Test
-	    void testUnknownItemIgnored() {
-	        assertEquals(0, calculator.calculateTotal(Arrays.asList("Chocolate")));
+	            int actualTotal = calculator.calculateTotal(testCase.getBasket());
+	            test.info("Actual Total: " + actualTotal);
+
+	            assertEquals(testCase.getExpectedTotal(), actualTotal);
+	            test.pass("Test Passed");
+
+	        } catch (AssertionError e) {
+	            test.fail("Test Failed | " + e.getMessage());
+	            throw e; // so JUnit still registers the failure
+	        }
 	    }
 
 	    @Test
 	    void testMultipleUnknownItemsIgnored() {
-	        List<String> basket = Arrays.asList("Candy", "Chocolate", "Cake");
-	        assertEquals(0, calculator.calculateTotal(basket));
+	    	TestDataObjects testCase = TestDataLoader.getTestCaseByName("Multiple Unknown Items Ignored");
+	    	ExtentTest test = ExtentReport.extent.createTest(testCase.getName());
+	        try {
+	            test.info("Basket Items: " + testCase.getBasket());
+	            test.info("Expected Total: " + testCase.getExpectedTotal());
+
+	            int actualTotal = calculator.calculateTotal(testCase.getBasket());
+	            test.info("Actual Total: " + actualTotal);
+
+	            assertEquals(testCase.getExpectedTotal(), actualTotal);
+	            test.pass("Test Passed");
+
+	        } catch (AssertionError e) {
+	            test.fail("Test Failed | " + e.getMessage());
+	            throw e; // so JUnit still registers the failure
+	        }
 	    }
     
 }

@@ -1,0 +1,79 @@
+{
+  "tests": [
+    {
+      "name": "Empty Basket",
+      "basket": [],
+      "expectedTotal": 0
+    },
+    {
+      "name": "Null Basket",
+      "basket": null,
+      "expectedTotal": 0
+    },
+    {
+      "name": "Single Apple",
+      "basket": ["Apple"],
+      "expectedTotal": 35
+    },
+    {
+      "name": "Single Banana",
+      "basket": ["Banana"],
+      "expectedTotal": 20
+    },
+    {
+      "name": "Single Melon",
+      "basket": ["Melon"],
+      "expectedTotal": 50
+    },
+    {
+      "name": "Single Lime",
+      "basket": ["Lime"],
+      "expectedTotal": 15
+    },
+    {
+      "name": "Multiple Apples And Bananas",
+      "basket": ["Apple", "Banana", "Apple"],
+      "expectedTotal": 90
+    },
+    {
+      "name": "Case Insensitive Items",
+      "basket": ["apple", "APPLE", "MeLoN"],
+      "expectedTotal": 120
+    },
+    {
+      "name": "Melon Offer Buy One Get One Free",
+      "basket": ["Melon", "Melon", "Melon", "Melon", "Melon"],
+      "expectedTotal": 150
+    },
+    {
+      "name": "Lime Offer Three For Two",
+      "basket": ["Lime", "Lime", "Lime", "Lime", "Lime", "Lime", "Lime"],
+      "expectedTotal": 75
+    },
+    {
+      "name": "Mixed Basket With Offers",
+      "basket": ["Apple", "Apple", "Banana", "Melon", "Melon", "Lime", "Lime", "Lime"],
+      "expectedTotal": 170
+    },
+    {
+      "name": "Mixed Basket With Unknown Items",
+      "basket": ["Apple", "Banana", "Chocolate", "Melon"],
+      "expectedTotal": 105
+    },
+    {
+      "name": "Basket With Whitespace Items",
+      "basket": [" Apple ", " Banana ", "  Melon "],
+      "expectedTotal": 105
+    },
+    {
+      "name": "Basket With Special Characters",
+      "basket": ["Apple@", "#Banana", "Melon$"],
+      "expectedTotal": 50
+    },
+    {
+      "name": "Multiple Unknown Items Ignored",
+      "basket": ["Candy", "Chocolate", "Cake"],
+      "expectedTotal": 0
+    }
+  ]
+}

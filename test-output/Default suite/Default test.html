@@ -55,11 +55,11 @@ function toggleAllBoxes() {
 <body>
 <h2 align='center'>Default test</h2><table border='1' align="center">
 <tr>
-<td>Tests passed/Failed/Skipped:</td><td>20/0/0</td>
+<td>Tests passed/Failed/Skipped:</td><td>13/2/0</td>
 </tr><tr>
-<td>Started on:</td><td>Sat Aug 23 03:33:39 BST 2025</td>
+<td>Started on:</td><td>Sat Aug 23 23:58:36 BST 2025</td>
 </tr>
-<tr><td>Total time:</td><td>0 seconds (851 ms)</td>
+<tr><td>Total time:</td><td>0 seconds (973 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -67,6 +67,67 @@ function toggleAllBoxes() {
 </tr>
 </table><p/>
 <small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-failed'>
+<tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td><b>Attribute(s)</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='com.assessment.automation.shopping_basket.BDD.TestsCucumberTestNGRunner.runScenario()'><b>runScenario</b><br>Test class: com.assessment.automation.shopping_basket.BDD.TestsCucumberTestNGRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Basket with special character items", "Validating cost calculation for items in shopping basket"</td>
+<td><div><pre>java.lang.AssertionError: expected [50] but found [0]
+	at org.testng.Assert.fail(Assert.java:111)
+	at org.testng.Assert.failNotEquals(Assert.java:1590)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:150)
+	at org.testng.Assert.assertEquals(Assert.java:132)
+	at org.testng.Assert.assertEquals(Assert.java:1431)
+	at org.testng.Assert.assertEquals(Assert.java:1395)
+	at org.testng.Assert.assertEquals(Assert.java:1441)
+	at com.assessment.automation.shopping_basket.BDD.StepDefination.then_m_total_price_should_match_expected(StepDefination.java:257)
+	at ✽.m_the total price should match expected(file:///C:/Users/soham/assessment-workspace/shopping-basket/src/test/resources/features/shopping_application_test.feature:74)
+</pre></div><a href='#' onClick='toggleBox("stack-trace160945458", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace160945458'><pre>java.lang.AssertionError: expected [50] but found [0]
+	at org.testng.Assert.fail(Assert.java:111)
+	at org.testng.Assert.failNotEquals(Assert.java:1590)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:150)
+	at org.testng.Assert.assertEquals(Assert.java:132)
+	at org.testng.Assert.assertEquals(Assert.java:1431)
+	at org.testng.Assert.assertEquals(Assert.java:1395)
+	at org.testng.Assert.assertEquals(Assert.java:1441)
+	at com.assessment.automation.shopping_basket.BDD.StepDefination.then_m_total_price_should_match_expected(StepDefination.java:257)
+	at ✽.m_the total price should match expected(file:///C:/Users/soham/assessment-workspace/shopping-basket/src/test/resources/features/shopping_application_test.feature:74)
+</pre></div></td>
+<td>0</td>
+<td>com.assessment.automation.shopping_basket.BDD.TestsCucumberTestNGRunner@2002fc1d</td></tr>
+<tr>
+<td title='com.assessment.automation.shopping_basket.BDD.TestsCucumberTestNGRunner.runScenario()'><b>runScenario</b><br>Test class: com.assessment.automation.shopping_basket.BDD.TestsCucumberTestNGRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Basket with whitespace items", "Validating cost calculation for items in shopping basket"</td>
+<td><div><pre>java.lang.AssertionError: expected [105] but found [0]
+	at org.testng.Assert.fail(Assert.java:111)
+	at org.testng.Assert.failNotEquals(Assert.java:1590)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:150)
+	at org.testng.Assert.assertEquals(Assert.java:132)
+	at org.testng.Assert.assertEquals(Assert.java:1431)
+	at org.testng.Assert.assertEquals(Assert.java:1395)
+	at org.testng.Assert.assertEquals(Assert.java:1441)
+	at com.assessment.automation.shopping_basket.BDD.StepDefination.then_l_total_price_should_match_expected(StepDefination.java:240)
+	at ✽.l_the total price should match expected(file:///C:/Users/soham/assessment-workspace/shopping-basket/src/test/resources/features/shopping_application_test.feature:69)
+</pre></div><a href='#' onClick='toggleBox("stack-trace1618326227", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1618326227'><pre>java.lang.AssertionError: expected [105] but found [0]
+	at org.testng.Assert.fail(Assert.java:111)
+	at org.testng.Assert.failNotEquals(Assert.java:1590)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:150)
+	at org.testng.Assert.assertEquals(Assert.java:132)
+	at org.testng.Assert.assertEquals(Assert.java:1431)
+	at org.testng.Assert.assertEquals(Assert.java:1395)
+	at org.testng.Assert.assertEquals(Assert.java:1441)
+	at com.assessment.automation.shopping_basket.BDD.StepDefination.then_l_total_price_should_match_expected(StepDefination.java:240)
+	at ✽.l_the total price should match expected(file:///C:/Users/soham/assessment-workspace/shopping-basket/src/test/resources/features/shopping_application_test.feature:69)
+</pre></div></td>
+<td>0</td>
+<td>com.assessment.automation.shopping_basket.BDD.TestsCucumberTestNGRunner@2002fc1d</td></tr>
+</table><p>
 <table width='100%' border='1' class='invocation-passed'>
 <tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
 <tr><td><b>Test method</b></td>
@@ -76,105 +137,70 @@ function toggleAllBoxes() {
 <td><b>Instance</b></td>
 </tr>
 <tr>
+<td title='com.assessment.automation.shopping_basket.BDD.TestsCucumberTestNGRunner.runScenario()'><b>runScenario</b><br>Test class: com.assessment.automation.shopping_basket.BDD.TestsCucumberTestNGRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Single Melon added in the basket", "Validating cost calculation for items in shopping basket"</td>
+<td></td>
+<td>0</td>
+<td>com.assessment.automation.shopping_basket.BDD.TestsCucumberTestNGRunner@2002fc1d</td></tr>
+<tr>
 <td title='com.assessment.automation.shopping_basket.BDD.TestsCucumberTestNGRunner.runScenario()'><b>runScenario</b><br>Test class: com.assessment.automation.shopping_basket.BDD.TestsCucumberTestNGRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Melon offer - buy one get one free", "Validating cost calculation for items in shopping basket"</td>
 <td></td>
 <td>0</td>
-<td>com.assessment.automation.shopping_basket.BDD.TestsCucumberTestNGRunner@20d525</td></tr>
-<tr>
-<td title='com.assessment.automation.shopping_basket.BDD.TestsCucumberTestNGRunner.runScenario()'><b>runScenario</b><br>Test class: com.assessment.automation.shopping_basket.BDD.TestsCucumberTestNGRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Empty basket should cost 0", "Validating cost calculation for items in shopping basket"</td>
-<td></td>
-<td>0</td>
-<td>com.assessment.automation.shopping_basket.BDD.TestsCucumberTestNGRunner@20d525</td></tr>
+<td>com.assessment.automation.shopping_basket.BDD.TestsCucumberTestNGRunner@2002fc1d</td></tr>
 <tr>
 <td title='com.assessment.automation.shopping_basket.BDD.TestsCucumberTestNGRunner.runScenario()'><b>runScenario</b><br>Test class: com.assessment.automation.shopping_basket.BDD.TestsCucumberTestNGRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Null basket should cost 0", "Validating cost calculation for items in shopping basket"</td>
 <td></td>
 <td>0</td>
-<td>com.assessment.automation.shopping_basket.BDD.TestsCucumberTestNGRunner@20d525</td></tr>
-<tr>
-<td title='com.assessment.automation.shopping_basket.BDD.TestsCucumberTestNGRunner.runScenario()'><b>runScenario</b><br>Test class: com.assessment.automation.shopping_basket.BDD.TestsCucumberTestNGRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Single Melon added in the basket", "Validating cost calculation for items in shopping basket"</td>
-<td></td>
-<td>0</td>
-<td>com.assessment.automation.shopping_basket.BDD.TestsCucumberTestNGRunner@20d525</td></tr>
-<tr>
-<td title='com.assessment.automation.shopping_basket.BDD.TestsCucumberTestNGRunner.runScenario()'><b>runScenario</b><br>Test class: com.assessment.automation.shopping_basket.BDD.TestsCucumberTestNGRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Single Lime added in the basket", "Validating cost calculation for items in shopping basket"</td>
-<td></td>
-<td>0</td>
-<td>com.assessment.automation.shopping_basket.BDD.TestsCucumberTestNGRunner@20d525</td></tr>
-<tr>
-<td title='com.assessment.automation.shopping_basket.BDD.TestsCucumberTestNGRunner.runScenario()'><b>runScenario</b><br>Test class: com.assessment.automation.shopping_basket.BDD.TestsCucumberTestNGRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Basket with unknown items, items should get ignored", "Validating cost calculation for items in shopping basket"</td>
-<td></td>
-<td>0</td>
-<td>com.assessment.automation.shopping_basket.BDD.TestsCucumberTestNGRunner@20d525</td></tr>
-<tr>
-<td title='com.assessment.automation.shopping_basket.BDD.TestsCucumberTestNGRunner.runScenario()'><b>runScenario</b><br>Test class: com.assessment.automation.shopping_basket.BDD.TestsCucumberTestNGRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Lime offer - three for the price of two", "Validating cost calculation for items in shopping basket"</td>
-<td></td>
-<td>0</td>
-<td>com.assessment.automation.shopping_basket.BDD.TestsCucumberTestNGRunner@20d525</td></tr>
-<tr>
-<td title='com.assessment.automation.shopping_basket.BDD.TestsCucumberTestNGRunner.runScenario()'><b>runScenario</b><br>Test class: com.assessment.automation.shopping_basket.BDD.TestsCucumberTestNGRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Basket with whitespace items", "Validating cost calculation for items in shopping basket"</td>
-<td></td>
-<td>0</td>
-<td>com.assessment.automation.shopping_basket.BDD.TestsCucumberTestNGRunner@20d525</td></tr>
-<tr>
-<td title='com.assessment.automation.shopping_basket.BDD.TestsCucumberTestNGRunner.runScenario()'><b>runScenario</b><br>Test class: com.assessment.automation.shopping_basket.BDD.TestsCucumberTestNGRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Melon offer - buy one get one free", "Validating cost calculation for items in shopping basket"</td>
-<td></td>
-<td>0</td>
-<td>com.assessment.automation.shopping_basket.BDD.TestsCucumberTestNGRunner@20d525</td></tr>
-<tr>
-<td title='com.assessment.automation.shopping_basket.BDD.TestsCucumberTestNGRunner.runScenario()'><b>runScenario</b><br>Test class: com.assessment.automation.shopping_basket.BDD.TestsCucumberTestNGRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Single Apple added in the basket", "Validating cost calculation for items in shopping basket"</td>
-<td></td>
-<td>0</td>
-<td>com.assessment.automation.shopping_basket.BDD.TestsCucumberTestNGRunner@20d525</td></tr>
-<tr>
-<td title='com.assessment.automation.shopping_basket.BDD.TestsCucumberTestNGRunner.runScenario()'><b>runScenario</b><br>Test class: com.assessment.automation.shopping_basket.BDD.TestsCucumberTestNGRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Case insensitive item names", "Validating cost calculation for items in shopping basket"</td>
-<td></td>
-<td>0</td>
-<td>com.assessment.automation.shopping_basket.BDD.TestsCucumberTestNGRunner@20d525</td></tr>
-<tr>
-<td title='com.assessment.automation.shopping_basket.BDD.TestsCucumberTestNGRunner.runScenario()'><b>runScenario</b><br>Test class: com.assessment.automation.shopping_basket.BDD.TestsCucumberTestNGRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Basket with only unknown items", "Validating cost calculation for items in shopping basket"</td>
-<td></td>
-<td>0</td>
-<td>com.assessment.automation.shopping_basket.BDD.TestsCucumberTestNGRunner@20d525</td></tr>
-<tr>
-<td title='com.assessment.automation.shopping_basket.BDD.TestsCucumberTestNGRunner.runScenario()'><b>runScenario</b><br>Test class: com.assessment.automation.shopping_basket.BDD.TestsCucumberTestNGRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Single Banana added in the basket", "Validating cost calculation for items in shopping basket"</td>
-<td></td>
-<td>0</td>
-<td>com.assessment.automation.shopping_basket.BDD.TestsCucumberTestNGRunner@20d525</td></tr>
+<td>com.assessment.automation.shopping_basket.BDD.TestsCucumberTestNGRunner@2002fc1d</td></tr>
 <tr>
 <td title='com.assessment.automation.shopping_basket.BDD.TestsCucumberTestNGRunner.runScenario()'><b>runScenario</b><br>Test class: com.assessment.automation.shopping_basket.BDD.TestsCucumberTestNGRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Multiple Apples and Bananas added in the basket", "Validating cost calculation for items in shopping basket"</td>
 <td></td>
 <td>0</td>
-<td>com.assessment.automation.shopping_basket.BDD.TestsCucumberTestNGRunner@20d525</td></tr>
+<td>com.assessment.automation.shopping_basket.BDD.TestsCucumberTestNGRunner@2002fc1d</td></tr>
+<tr>
+<td title='com.assessment.automation.shopping_basket.BDD.TestsCucumberTestNGRunner.runScenario()'><b>runScenario</b><br>Test class: com.assessment.automation.shopping_basket.BDD.TestsCucumberTestNGRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Basket with unknown items, items should get ignored", "Validating cost calculation for items in shopping basket"</td>
+<td></td>
+<td>0</td>
+<td>com.assessment.automation.shopping_basket.BDD.TestsCucumberTestNGRunner@2002fc1d</td></tr>
 <tr>
 <td title='com.assessment.automation.shopping_basket.BDD.TestsCucumberTestNGRunner.runScenario()'><b>runScenario</b><br>Test class: com.assessment.automation.shopping_basket.BDD.TestsCucumberTestNGRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Lime offer - three for the price of two", "Validating cost calculation for items in shopping basket"</td>
 <td></td>
 <td>0</td>
-<td>com.assessment.automation.shopping_basket.BDD.TestsCucumberTestNGRunner@20d525</td></tr>
+<td>com.assessment.automation.shopping_basket.BDD.TestsCucumberTestNGRunner@2002fc1d</td></tr>
+<tr>
+<td title='com.assessment.automation.shopping_basket.BDD.TestsCucumberTestNGRunner.runScenario()'><b>runScenario</b><br>Test class: com.assessment.automation.shopping_basket.BDD.TestsCucumberTestNGRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Single Lime added in the basket", "Validating cost calculation for items in shopping basket"</td>
+<td></td>
+<td>0</td>
+<td>com.assessment.automation.shopping_basket.BDD.TestsCucumberTestNGRunner@2002fc1d</td></tr>
 <tr>
 <td title='com.assessment.automation.shopping_basket.BDD.TestsCucumberTestNGRunner.runScenario()'><b>runScenario</b><br>Test class: com.assessment.automation.shopping_basket.BDD.TestsCucumberTestNGRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Mixed basket with offers", "Validating cost calculation for items in shopping basket"</td>
 <td></td>
 <td>0</td>
-<td>com.assessment.automation.shopping_basket.BDD.TestsCucumberTestNGRunner@20d525</td></tr>
+<td>com.assessment.automation.shopping_basket.BDD.TestsCucumberTestNGRunner@2002fc1d</td></tr>
 <tr>
-<td title='com.assessment.automation.shopping_basket.BDD.TestsCucumberTestNGRunner.runScenario()'><b>runScenario</b><br>Test class: com.assessment.automation.shopping_basket.BDD.TestsCucumberTestNGRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Basket with special character items", "Validating cost calculation for items in shopping basket"</td>
+<td title='com.assessment.automation.shopping_basket.BDD.TestsCucumberTestNGRunner.runScenario()'><b>runScenario</b><br>Test class: com.assessment.automation.shopping_basket.BDD.TestsCucumberTestNGRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Case insensitive item names", "Validating cost calculation for items in shopping basket"</td>
 <td></td>
 <td>0</td>
-<td>com.assessment.automation.shopping_basket.BDD.TestsCucumberTestNGRunner@20d525</td></tr>
+<td>com.assessment.automation.shopping_basket.BDD.TestsCucumberTestNGRunner@2002fc1d</td></tr>
 <tr>
-<td title='com.assessment.automation.shopping_basket.BDD.TestsCucumberTestNGRunner.runScenario()'><b>runScenario</b><br>Test class: com.assessment.automation.shopping_basket.BDD.TestsCucumberTestNGRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Lime offer - three for the price of two", "Validating cost calculation for items in shopping basket"</td>
+<td title='com.assessment.automation.shopping_basket.BDD.TestsCucumberTestNGRunner.runScenario()'><b>runScenario</b><br>Test class: com.assessment.automation.shopping_basket.BDD.TestsCucumberTestNGRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Single Apple added in the basket", "Validating cost calculation for items in shopping basket"</td>
 <td></td>
 <td>0</td>
-<td>com.assessment.automation.shopping_basket.BDD.TestsCucumberTestNGRunner@20d525</td></tr>
+<td>com.assessment.automation.shopping_basket.BDD.TestsCucumberTestNGRunner@2002fc1d</td></tr>
 <tr>
-<td title='com.assessment.automation.shopping_basket.BDD.TestsCucumberTestNGRunner.runScenario()'><b>runScenario</b><br>Test class: com.assessment.automation.shopping_basket.BDD.TestsCucumberTestNGRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Melon offer - buy one get one free", "Validating cost calculation for items in shopping basket"</td>
+<td title='com.assessment.automation.shopping_basket.BDD.TestsCucumberTestNGRunner.runScenario()'><b>runScenario</b><br>Test class: com.assessment.automation.shopping_basket.BDD.TestsCucumberTestNGRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Empty basket should cost 0", "Validating cost calculation for items in shopping basket"</td>
 <td></td>
 <td>0</td>
-<td>com.assessment.automation.shopping_basket.BDD.TestsCucumberTestNGRunner@20d525</td></tr>
+<td>com.assessment.automation.shopping_basket.BDD.TestsCucumberTestNGRunner@2002fc1d</td></tr>
 <tr>
-<td title='com.assessment.automation.shopping_basket.BDD.TestsCucumberTestNGRunner.runScenario()'><b>runScenario</b><br>Test class: com.assessment.automation.shopping_basket.BDD.TestsCucumberTestNGRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Lime offer - three for the price of two", "Validating cost calculation for items in shopping basket"</td>
+<td title='com.assessment.automation.shopping_basket.BDD.TestsCucumberTestNGRunner.runScenario()'><b>runScenario</b><br>Test class: com.assessment.automation.shopping_basket.BDD.TestsCucumberTestNGRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Basket with only unknown items", "Validating cost calculation for items in shopping basket"</td>
 <td></td>
 <td>0</td>
-<td>com.assessment.automation.shopping_basket.BDD.TestsCucumberTestNGRunner@20d525</td></tr>
+<td>com.assessment.automation.shopping_basket.BDD.TestsCucumberTestNGRunner@2002fc1d</td></tr>
+<tr>
+<td title='com.assessment.automation.shopping_basket.BDD.TestsCucumberTestNGRunner.runScenario()'><b>runScenario</b><br>Test class: com.assessment.automation.shopping_basket.BDD.TestsCucumberTestNGRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Single Banana added in the basket", "Validating cost calculation for items in shopping basket"</td>
+<td></td>
+<td>0</td>
+<td>com.assessment.automation.shopping_basket.BDD.TestsCucumberTestNGRunner@2002fc1d</td></tr>
 </table><p>
 </body>
 </html>
