@@ -18,8 +18,9 @@ public class StepDefination {
     private int total;
     private final ShoppingApplicationLogic calculator = new ShoppingApplicationLogic();
     private TestDataObjects currentTestCase;
+    
 
-    // ------------------- Scenario 1 -------------------
+    //  Scenario 1 
     @Given("An empty basket")
     public void given_empty_basket() {
         currentTestCase = TestDataLoader.getTestCaseByName("Empty Basket");
@@ -36,7 +37,9 @@ public class StepDefination {
     	Assert.assertEquals(total, currentTestCase.getExpectedTotal());
     }
 
-    // ------------------- Scenario 2 -------------------
+    
+    
+    //  Scenario 2 
     @Given("A null basket")
     public void given_null_basket() {
         currentTestCase = TestDataLoader.getTestCaseByName("Null Basket");
@@ -53,7 +56,9 @@ public class StepDefination {
         Assert.assertEquals(total, currentTestCase.getExpectedTotal());
     }
 
-    // ------------------- Scenario 3 -------------------
+    
+    
+    //  Scenario 3 
     @Given("Following items are added to the basket_b")
     public void given_items_added_b() {
         currentTestCase = TestDataLoader.getTestCaseByName("Single Apple");
@@ -70,7 +75,9 @@ public class StepDefination {
         Assert.assertEquals(total, currentTestCase.getExpectedTotal());
     }
 
-    // ------------------- Scenario 4 -------------------
+    
+    
+    //  Scenario 4 
     @Given("Following items are added to the basket_c")
     public void given_items_added_c() {
         currentTestCase = TestDataLoader.getTestCaseByName("Single Banana");
@@ -87,7 +94,9 @@ public class StepDefination {
         Assert.assertEquals(total, currentTestCase.getExpectedTotal());
     }
 
-    // ------------------- Scenario 5 -------------------
+    
+   
+    //  Scenario 5 
     @Given("Following items are added to the basket_d")
     public void given_items_added_d() {
         currentTestCase = TestDataLoader.getTestCaseByName("Single Melon");
@@ -104,7 +113,9 @@ public class StepDefination {
         Assert.assertEquals(total, currentTestCase.getExpectedTotal());
     }
 
-    // ------------------- Scenario 6 -------------------
+    
+    
+    //  Scenario 6 
     @Given("Following items are added to the basket_e")
     public void given_items_added_e() {
         currentTestCase = TestDataLoader.getTestCaseByName("Single Lime");
@@ -121,7 +132,9 @@ public class StepDefination {
         Assert.assertEquals(total, currentTestCase.getExpectedTotal());
     }
 
-    // ------------------- Scenario 7 -------------------
+    
+    
+    //  Scenario 7 
     @Given("Following items are added to the basket_f")
     public void given_items_added_f() {
         currentTestCase = TestDataLoader.getTestCaseByName("Multiple Apples And Bananas");
@@ -138,7 +151,9 @@ public class StepDefination {
         Assert.assertEquals(total, currentTestCase.getExpectedTotal());
     }
 
-    // ------------------- Scenario 8 -------------------
+    
+    
+    //  Scenario 8 
     @Given("Following items are added to the basket_g")
     public void given_items_added_g() {
         currentTestCase = TestDataLoader.getTestCaseByName("Case Insensitive Items");
@@ -155,7 +170,9 @@ public class StepDefination {
         Assert.assertEquals(total, currentTestCase.getExpectedTotal());
     }
 
-    // ------------------- Scenario 9 -------------------
+    
+    
+    //  Scenario 9 
     @Given("Following items are added to the basket_h")
     public void given_items_added_h() {
         currentTestCase = TestDataLoader.getTestCaseByName("Melon Offer Buy One Get One Free");
@@ -172,7 +189,9 @@ public class StepDefination {
         Assert.assertEquals(total, currentTestCase.getExpectedTotal());
     }
 
-    // ------------------- Scenario 10 -------------------
+    
+    
+    //  Scenario 10 
     @Given("Following items are added to the basket_i")
     public void given_items_added_i() {
         currentTestCase = TestDataLoader.getTestCaseByName("Lime Offer Three For Two");
@@ -189,7 +208,9 @@ public class StepDefination {
         Assert.assertEquals(total, currentTestCase.getExpectedTotal());
     }
 
-    // ------------------- Scenario 11 -------------------
+    
+    
+    //  Scenario 11 
     @Given("Following items are added to the basket_j")
     public void given_items_added_j() {
         currentTestCase = TestDataLoader.getTestCaseByName("Mixed Basket With Offers");
@@ -206,7 +227,9 @@ public class StepDefination {
         Assert.assertEquals(total, currentTestCase.getExpectedTotal());
     }
 
-    // ------------------- Scenario 12 -------------------
+    
+    
+    //  Scenario 12 
     @Given("Following items are added to the basket_k")
     public void given_items_added_k() {
         currentTestCase = TestDataLoader.getTestCaseByName("Mixed Basket With Unknown Items");
@@ -223,7 +246,9 @@ public class StepDefination {
         Assert.assertEquals(total, currentTestCase.getExpectedTotal());
     }
 
-    // ------------------- Scenario 13 -------------------
+    
+    
+    //  Scenario 13 
     @Given("Following items are added to the basket_l")
     public void given_items_added_l() {
         currentTestCase = TestDataLoader.getTestCaseByName("Basket With Whitespace Items");
@@ -240,7 +265,9 @@ public class StepDefination {
         Assert.assertEquals(total, currentTestCase.getExpectedTotal());
     }
 
-    // ------------------- Scenario 14 -------------------
+    
+    
+    //  Scenario 14 
     @Given("Following items are added to the basket_m")
     public void given_items_added_m() {
         currentTestCase = TestDataLoader.getTestCaseByName("Basket With Special Characters");
@@ -257,7 +284,9 @@ public class StepDefination {
         Assert.assertEquals(total, currentTestCase.getExpectedTotal());
     }
 
-    // ------------------- Scenario 15 -------------------
+    
+    
+    //  Scenario 15 
     @Given("Following items are added to the basket_n from test data")
     public void given_items_added_n() {
         currentTestCase = TestDataLoader.getTestCaseByName("Multiple Unknown Items Ignored");

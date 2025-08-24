@@ -2,26 +2,26 @@
 <testng-results ignored="0" total="15" passed="13" failed="2" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-08-23T23:58:36 BST" name="Default suite" finished-at="2025-08-23T23:58:37 BST" duration-ms="973">
+  <suite started-at="2025-08-24T01:27:42 BST" name="TestNGTestSuite" finished-at="2025-08-24T01:27:43 BST" duration-ms="1007">
     <groups>
       <group name="cucumber">
-        <method signature="AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.assessment.automation.shopping_basket.BDD.TestsCucumberTestNGRunner@2002fc1d]" name="runScenario" class="io.cucumber.testng.AbstractTestNGCucumberTests"/>
+        <method signature="AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.assessment.automation.shopping_basket.BDD.TestsCucumberTestNGRunner@3bd82cf5]" name="runScenario" class="io.cucumber.testng.AbstractTestNGCucumberTests"/>
       </group> <!-- cucumber -->
     </groups>
-    <test started-at="2025-08-23T23:58:36 BST" name="Default test" finished-at="2025-08-23T23:58:37 BST" duration-ms="973">
+    <test started-at="2025-08-24T01:27:42 BST" name="BDDTests" finished-at="2025-08-24T01:27:43 BST" duration-ms="1007">
       <class name="com.assessment.automation.shopping_basket.BDD.TestsCucumberTestNGRunner">
-        <test-method is-config="true" signature="setUpClass(org.testng.ITestContext)[pri:0, instance:com.assessment.automation.shopping_basket.BDD.TestsCucumberTestNGRunner@2002fc1d]" started-at="2025-08-23T23:58:36 BST" name="setUpClass" finished-at="2025-08-23T23:58:36 BST" duration-ms="528" status="PASS">
+        <test-method is-config="true" signature="setUpClass(org.testng.ITestContext)[pri:0, instance:com.assessment.automation.shopping_basket.BDD.TestsCucumberTestNGRunner@3bd82cf5]" started-at="2025-08-24T01:27:42 BST" name="setUpClass" finished-at="2025-08-24T01:27:43 BST" duration-ms="543" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[org.testng.TestRunner@1698d7c0]]>
+                <![CDATA[org.testng.TestRunner@70abf9b0]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUpClass -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.assessment.automation.shopping_basket.BDD.TestsCucumberTestNGRunner@2002fc1d]" started-at="2025-08-23T23:58:36 BST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-08-23T23:58:37 BST" duration-ms="275" status="PASS">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.assessment.automation.shopping_basket.BDD.TestsCucumberTestNGRunner@3bd82cf5]" started-at="2025-08-24T01:27:43 BST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-08-24T01:27:43 BST" duration-ms="279" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -37,7 +37,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.assessment.automation.shopping_basket.BDD.TestsCucumberTestNGRunner@2002fc1d]" started-at="2025-08-23T23:58:37 BST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-08-23T23:58:37 BST" duration-ms="4" status="PASS">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.assessment.automation.shopping_basket.BDD.TestsCucumberTestNGRunner@3bd82cf5]" started-at="2025-08-24T01:27:43 BST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-08-24T01:27:43 BST" duration-ms="9" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -53,7 +53,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.assessment.automation.shopping_basket.BDD.TestsCucumberTestNGRunner@2002fc1d]" started-at="2025-08-23T23:58:37 BST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-08-23T23:58:37 BST" duration-ms="7" status="PASS">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.assessment.automation.shopping_basket.BDD.TestsCucumberTestNGRunner@3bd82cf5]" started-at="2025-08-24T01:27:43 BST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-08-24T01:27:43 BST" duration-ms="6" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -69,7 +69,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.assessment.automation.shopping_basket.BDD.TestsCucumberTestNGRunner@2002fc1d]" started-at="2025-08-23T23:58:37 BST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-08-23T23:58:37 BST" duration-ms="5" status="PASS">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.assessment.automation.shopping_basket.BDD.TestsCucumberTestNGRunner@3bd82cf5]" started-at="2025-08-24T01:27:43 BST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-08-24T01:27:43 BST" duration-ms="5" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -85,7 +85,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.assessment.automation.shopping_basket.BDD.TestsCucumberTestNGRunner@2002fc1d]" started-at="2025-08-23T23:58:37 BST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-08-23T23:58:37 BST" duration-ms="9" status="PASS">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.assessment.automation.shopping_basket.BDD.TestsCucumberTestNGRunner@3bd82cf5]" started-at="2025-08-24T01:27:43 BST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-08-24T01:27:43 BST" duration-ms="9" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -101,7 +101,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.assessment.automation.shopping_basket.BDD.TestsCucumberTestNGRunner@2002fc1d]" started-at="2025-08-23T23:58:37 BST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-08-23T23:58:37 BST" duration-ms="4" status="PASS">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.assessment.automation.shopping_basket.BDD.TestsCucumberTestNGRunner@3bd82cf5]" started-at="2025-08-24T01:27:43 BST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-08-24T01:27:43 BST" duration-ms="5" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -117,7 +117,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.assessment.automation.shopping_basket.BDD.TestsCucumberTestNGRunner@2002fc1d]" started-at="2025-08-23T23:58:37 BST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-08-23T23:58:37 BST" duration-ms="4" status="PASS">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.assessment.automation.shopping_basket.BDD.TestsCucumberTestNGRunner@3bd82cf5]" started-at="2025-08-24T01:27:43 BST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-08-24T01:27:43 BST" duration-ms="3" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -133,7 +133,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.assessment.automation.shopping_basket.BDD.TestsCucumberTestNGRunner@2002fc1d]" started-at="2025-08-23T23:58:37 BST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-08-23T23:58:37 BST" duration-ms="4" status="PASS">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.assessment.automation.shopping_basket.BDD.TestsCucumberTestNGRunner@3bd82cf5]" started-at="2025-08-24T01:27:43 BST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-08-24T01:27:43 BST" duration-ms="3" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -149,7 +149,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.assessment.automation.shopping_basket.BDD.TestsCucumberTestNGRunner@2002fc1d]" started-at="2025-08-23T23:58:37 BST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-08-23T23:58:37 BST" duration-ms="3" status="PASS">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.assessment.automation.shopping_basket.BDD.TestsCucumberTestNGRunner@3bd82cf5]" started-at="2025-08-24T01:27:43 BST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-08-24T01:27:43 BST" duration-ms="5" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -165,7 +165,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.assessment.automation.shopping_basket.BDD.TestsCucumberTestNGRunner@2002fc1d]" started-at="2025-08-23T23:58:37 BST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-08-23T23:58:37 BST" duration-ms="3" status="PASS">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.assessment.automation.shopping_basket.BDD.TestsCucumberTestNGRunner@3bd82cf5]" started-at="2025-08-24T01:27:43 BST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-08-24T01:27:43 BST" duration-ms="4" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -181,7 +181,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.assessment.automation.shopping_basket.BDD.TestsCucumberTestNGRunner@2002fc1d]" started-at="2025-08-23T23:58:37 BST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-08-23T23:58:37 BST" duration-ms="4" status="PASS">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.assessment.automation.shopping_basket.BDD.TestsCucumberTestNGRunner@3bd82cf5]" started-at="2025-08-24T01:27:43 BST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-08-24T01:27:43 BST" duration-ms="5" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -197,7 +197,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.assessment.automation.shopping_basket.BDD.TestsCucumberTestNGRunner@2002fc1d]" started-at="2025-08-23T23:58:37 BST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-08-23T23:58:37 BST" duration-ms="3" status="PASS">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.assessment.automation.shopping_basket.BDD.TestsCucumberTestNGRunner@3bd82cf5]" started-at="2025-08-24T01:27:43 BST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-08-24T01:27:43 BST" duration-ms="4" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -213,7 +213,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.assessment.automation.shopping_basket.BDD.TestsCucumberTestNGRunner@2002fc1d]" started-at="2025-08-23T23:58:37 BST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-08-23T23:58:37 BST" duration-ms="20" status="FAIL">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.assessment.automation.shopping_basket.BDD.TestsCucumberTestNGRunner@3bd82cf5]" started-at="2025-08-24T01:27:43 BST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-08-24T01:27:43 BST" duration-ms="14" status="FAIL">
           <params>
             <param index="0">
               <value>
@@ -239,7 +239,7 @@ at org.testng.Assert.assertEquals(Assert.java:132)
 at org.testng.Assert.assertEquals(Assert.java:1431)
 at org.testng.Assert.assertEquals(Assert.java:1395)
 at org.testng.Assert.assertEquals(Assert.java:1441)
-at com.assessment.automation.shopping_basket.BDD.StepDefination.then_l_total_price_should_match_expected(StepDefination.java:240)
+at com.assessment.automation.shopping_basket.BDD.StepDefination.then_l_total_price_should_match_expected(StepDefination.java:265)
 at ✽.l_the total price should match expected(file:///C:/Users/soham/assessment-workspace/shopping-basket/src/test/resources/features/shopping_application_test.feature:69)
 ]]>
             </full-stacktrace>
@@ -247,7 +247,7 @@ at ✽.l_the total price should match expected(file:///C:/Users/soham/assessment
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.assessment.automation.shopping_basket.BDD.TestsCucumberTestNGRunner@2002fc1d]" started-at="2025-08-23T23:58:37 BST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-08-23T23:58:37 BST" duration-ms="4" status="FAIL">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.assessment.automation.shopping_basket.BDD.TestsCucumberTestNGRunner@3bd82cf5]" started-at="2025-08-24T01:27:43 BST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-08-24T01:27:43 BST" duration-ms="5" status="FAIL">
           <params>
             <param index="0">
               <value>
@@ -273,7 +273,7 @@ at org.testng.Assert.assertEquals(Assert.java:132)
 at org.testng.Assert.assertEquals(Assert.java:1431)
 at org.testng.Assert.assertEquals(Assert.java:1395)
 at org.testng.Assert.assertEquals(Assert.java:1441)
-at com.assessment.automation.shopping_basket.BDD.StepDefination.then_m_total_price_should_match_expected(StepDefination.java:257)
+at com.assessment.automation.shopping_basket.BDD.StepDefination.then_m_total_price_should_match_expected(StepDefination.java:284)
 at ✽.m_the total price should match expected(file:///C:/Users/soham/assessment-workspace/shopping-basket/src/test/resources/features/shopping_application_test.feature:74)
 ]]>
             </full-stacktrace>
@@ -281,7 +281,7 @@ at ✽.m_the total price should match expected(file:///C:/Users/soham/assessment
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.assessment.automation.shopping_basket.BDD.TestsCucumberTestNGRunner@2002fc1d]" started-at="2025-08-23T23:58:37 BST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-08-23T23:58:37 BST" duration-ms="2" status="PASS">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.assessment.automation.shopping_basket.BDD.TestsCucumberTestNGRunner@3bd82cf5]" started-at="2025-08-24T01:27:43 BST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-08-24T01:27:43 BST" duration-ms="3" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -297,11 +297,11 @@ at ✽.m_the total price should match expected(file:///C:/Users/soham/assessment
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method is-config="true" signature="tearDownClass()[pri:0, instance:com.assessment.automation.shopping_basket.BDD.TestsCucumberTestNGRunner@2002fc1d]" started-at="2025-08-23T23:58:37 BST" name="tearDownClass" finished-at="2025-08-23T23:58:37 BST" duration-ms="40" status="PASS">
+        <test-method is-config="true" signature="tearDownClass()[pri:0, instance:com.assessment.automation.shopping_basket.BDD.TestsCucumberTestNGRunner@3bd82cf5]" started-at="2025-08-24T01:27:43 BST" name="tearDownClass" finished-at="2025-08-24T01:27:43 BST" duration-ms="39" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDownClass -->
       </class> <!-- com.assessment.automation.shopping_basket.BDD.TestsCucumberTestNGRunner -->
-    </test> <!-- Default test -->
-  </suite> <!-- Default suite -->
+    </test> <!-- BDDTests -->
+  </suite> <!-- TestNGTestSuite -->
 </testng-results>

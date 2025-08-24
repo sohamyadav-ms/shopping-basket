@@ -2,7 +2,6 @@ package com.assessment.automation.shopping_basket;
 
 import java.util.HashMap;
 import java.util.List;
-import java.util.Map;
 
 public class ShoppingApplicationLogic {
 	 private static final HashMap<String, Integer> PRICES = new HashMap<>();
@@ -14,38 +13,43 @@ public class ShoppingApplicationLogic {
 		 PRICES.put("lime",15);
 	 }
 	            
-	 
+	 public int calculateTotal(List<String> items) {
+    	
+    	if (items == null || items.isEmpty()) {
+            return 0;
+        }
+    	
+        long melonCount = 0;
+        long limeCount = 0;
+        for (String item : items) {
+            if (item.equalsIgnoreCase("melon")) {
+                melonCount++;
+            } else if (item.equalsIgnoreCase("lime")) {
+                limeCount++;
+            }
+        }
 
-	    /**
-	     * Calculate the total basket cost in pence.
-	     * Supports special offers:
-	     * - Melons: Buy 1 get 1 free
-	     * - Limes: 3 for the price of 2
-	     *
-	     * @param items List of item names
-	     * @return total cost in pence
-	     */
-	    public int calculateTotal(List<String> items) {
-	    	
-	    	if (items == null || items.isEmpty()) {
-	            return 0;
-	        }
-	    	
-	        long melonCount = items.stream().filter(i -> i.equalsIgnoreCase("melon")).count();
-	        long limeCount = items.stream().filter(i -> i.equalsIgnoreCase("lime")).count();
+        
+        int total = 0;
+		for (String item : items) {
+		    if (!item.equalsIgnoreCase("melon") && !item.equalsIgnoreCase("lime")) {
+		        total += PRICES.getOrDefault(item.toLowerCase(), 0);
+		    }
+		}
+                
 
-	        // Total for items without special offers
-	        int total = items.stream()
-	                .filter(i -> !i.equalsIgnoreCase("melon") && !i.equalsIgnoreCase("lime"))
-	                .mapToInt(i -> PRICES.getOrDefault(i.toLowerCase(), 0))
-	                .sum();
+		int melonPrice = PRICES.get("melon");
+		long freeMelons = melonCount / 2;
+		long payMelons = melonCount - freeMelons;
+		total += (int) (payMelons * melonPrice);
 
-	        // Apply melon offer: buy 1 get 1 free
-	        total += ((melonCount / 2 + melonCount % 2) * PRICES.get("melon"));
+	
+		int limePrice = PRICES.get("lime");
+		long limeGroups = limeCount / 3;
+		long remainingLimes = limeCount % 3;
+		long payLimes = limeGroups * 2 + remainingLimes;
+		total += (int) (payLimes * limePrice);
 
-	        // Apply lime offer: 3 for 2
-	        total += ((limeCount / 3) * 2 * PRICES.get("lime")) + ((limeCount % 3) * PRICES.get("lime"));
-
-	        return total;
-	    }
+        return total;
+    }
 }

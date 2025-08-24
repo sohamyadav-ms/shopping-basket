@@ -9,7 +9,7 @@ import org.testng.ITestResult;
 
 public class TestNGReporter implements ITestListener{
 	
-	private static final String REPORT_FILE = "target/testng-report.html";
+	private static final String REPORT_FILE = "target/TestNGTest-report.html";
     private static FileWriter writer;
 
     @Override
@@ -51,7 +51,7 @@ public class TestNGReporter implements ITestListener{
         try {
             writer.write("</body></html>");
             writer.close();
-            System.out.println("Simple TestNG HTML Report generated: " + REPORT_FILE);
+            System.out.println("TestNG HTML Report: " + REPORT_FILE);
         } catch (IOException e) {
             e.printStackTrace();
         }

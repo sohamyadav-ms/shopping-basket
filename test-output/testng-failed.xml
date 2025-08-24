@@ -1,15 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
-<suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
-  <test thread-count="5" name="Default test(failed)">
+<suite name="Failed suite [TestNGTestSuite]">
+  <listeners>
+    <listener class-name="com.assessment.automation.shopping_basket.BDD.TestNGReporter"/>
+  </listeners>
+  <test thread-count="5" name="BDDTests(failed)">
     <classes>
       <class name="com.assessment.automation.shopping_basket.BDD.TestsCucumberTestNGRunner">
         <methods>
           <include name="setUpClass"/>
-          <include name="runScenario" invocation-numbers="12 13"/>
           <include name="tearDownClass"/>
+          <include name="runScenario" invocation-numbers="12 13"/>
         </methods>
       </class> <!-- com.assessment.automation.shopping_basket.BDD.TestsCucumberTestNGRunner -->
     </classes>
-  </test> <!-- Default test(failed) -->
-</suite> <!-- Failed suite [Default suite] -->
+  </test> <!-- BDDTests(failed) -->
+</suite> <!-- Failed suite [TestNGTestSuite] -->

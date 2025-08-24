@@ -7,7 +7,7 @@ import io.cucumber.testng.CucumberOptions;
 @CucumberOptions(
         features = "src/test/resources/features",
         glue = "com.assessment.automation.shopping_basket.BDD",
-        plugin = {"pretty", "html:target/cucumber-reports.html", "json:target/cucumber.json"},
+        plugin = {"pretty", "html:target/Cucumber-report.html", "json:target/cucumber.json"},
         monochrome = true
 )
 
